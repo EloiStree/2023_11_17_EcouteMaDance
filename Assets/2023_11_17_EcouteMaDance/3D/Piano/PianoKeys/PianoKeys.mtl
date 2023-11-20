@@ -1,0 +1,12 @@
+# Blender 3.3.1 MTL File: 'None'
+# www.blender.org
+
+newmtl object_0
+Ns 9.849158
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd RGB_d90fba6330e446e4a643b22e4f3f913d_Piano_Pinao_BaseColor.png
