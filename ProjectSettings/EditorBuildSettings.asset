@@ -8,26 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2023_11_17_EcouteMaDance/EcouteMaDanceDraft.unity
     guid: 47082d0116d3acb439d2f1da30fa646a
-  - enabled: 1
-    path: Assets/2023_11_17_EcouteMaDance/CaptureVideo.unity
-    guid: d8142b1ea0ac92e47ab0d1491f232e4d
-  - enabled: 1
-    path: Assets/Native Cameras Scene/OpenCameraXR.unity
-    guid: 8aec95a0acd45ed46aa238ab66915343
-  - enabled: 1
-    path: Assets/Native Cameras Scene/OculusCameraXR.unity
-    guid: cd83b033ceb3e0a48946ad14457ab7b7
-  - enabled: 1
-    path: Assets/Native Cameras Scene/NoneXR.unity
-    guid: 56492dee44c9bf7418d4704d8ce3ca8a
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b786e5419bd49764b9416c9ae946a0d8,
-      type: 2}
-    com.unity.input.settings: {fileID: 11400000, guid: 25cf275c017e08843aeb27bb261c9ea7,
-      type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: bbc49917dac1f3b40aad40a27753301f,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 60398c8df0d5f4c44989dd764c021156,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aab76828b229bf94384e404f67cc2a8e,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f55a6129b5f4cd242ae3b20241307929,
       type: 2}

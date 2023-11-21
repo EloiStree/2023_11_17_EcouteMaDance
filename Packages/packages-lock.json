@@ -53,46 +53,19 @@
       "dependencies": {},
       "hash": "558f23b6ed48f7aabca66e190dac1a6bcb37bce8"
     },
-    "com.meta.xr.sdk.audio": {
-      "version": "59.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.meta.xr.sdk.core": {
-      "version": "59.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.meta.xr.sdk.interaction": {
-      "version": "59.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.textmeshpro": "3.0.6",
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.meta.xr.sdk.interaction.ovr": {
-      "version": "59.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.meta.xr.sdk.core": "59.0.0",
-        "com.meta.xr.sdk.interaction": "59.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.tayx.graphy": {
       "version": "https://github.com/Tayx94/graphy.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "7b634c383ae631e7f4efaf08235c2d829a7d3ecc"
+    },
+    "com.ultraleap.tracking": {
+      "version": "https://github.com/ultraleap/UnityPlugin.git?path=/Packages/Tracking",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "70b495ee974d7c6094e19b54e5e787335a7efa2f"
     },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
@@ -341,12 +314,15 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.xr.oculus": {
-      "version": "4.0.0",
+    "com.unity.xr.openxr": {
+      "version": "1.9.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.xr.management": "4.2.0"
+        "com.unity.xr.management": "4.4.0",
+        "com.unity.xr.legacyinputhelpers": "2.1.2",
+        "com.unity.inputsystem": "1.6.3",
+        "com.unity.xr.core-utils": "2.1.1"
       },
       "url": "https://packages.unity.com"
     },

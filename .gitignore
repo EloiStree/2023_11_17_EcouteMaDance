@@ -47,6 +47,9 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+*/qxrcoreservice.aar
+*qxrcoreservice.aar
+
 
 *.igit/
 *.igit
