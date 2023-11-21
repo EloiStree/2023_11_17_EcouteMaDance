@@ -7503,7 +7503,7 @@ PrefabInstance:
     - target: {fileID: 1211483880681293935, guid: cec05e0df11f2f042a3414492827d498,
         type: 3}
       propertyPath: m_cameraSceneIdToUse
-      value: Oculus
+      value: OpenXR
       objectReference: {fileID: 0}
     - target: {fileID: 1211483880681293935, guid: cec05e0df11f2f042a3414492827d498,
         type: 3}
