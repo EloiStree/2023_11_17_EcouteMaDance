@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &135319690098889176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964756683974039932}
+  - component: {fileID: 6718145985532745539}
+  m_Layer: 0
+  m_Name: PlugInProvider Oculus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1964756683974039932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135319690098889176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4935477694246166256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6718145985532745539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135319690098889176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176c446928e84df429bfccca907740a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_lookingForProvider: oculus display
+  m_currentProviderName: None
+--- !u!1 &1619487639906694643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4935477694246166256}
+  - component: {fileID: 1211483880681293935}
+  m_Layer: 0
+  m_Name: Experiment Import Camera Scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4935477694246166256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619487639906694643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1989586, y: 0.40015495, z: 1.2113421}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1964756683974039932}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1211483880681293935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619487639906694643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d54823f4b1f0b74ba4615b16b37eff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cameraSceneIdToUse: Default
+  m_useAutoDetection: 0
+  m_autoDetectSceneIdOculus: Oculus
+  m_detectorOculus: {fileID: 6718145985532745539}
+  m_autoDetectSceneIdLynx: Lynx
+  m_detectorLynx: {fileID: 0}
+  m_autoDetectSceneIdPico: Pico
+  m_detectorPico: {fileID: 0}
+  m_useAutoDetectionCode:
+  - m_xrPlatformIdToLoad: Oculus
+    m_codeOfAutoDetection: {fileID: 0}
+  - m_xrPlatformIdToLoad: Lynx
+    m_codeOfAutoDetection: {fileID: 0}
+  - m_xrPlatformIdToLoad: Pico
+    m_codeOfAutoDetection: {fileID: 0}
+  m_sceneToLoad:
+  - m_cameraSceneId: Default
+    m_cameraSceneName: DefaultCameraXR
+  - m_cameraSceneId: Lynx
+    m_cameraSceneName: LynxCameraXR
+  - m_cameraSceneId: Oculus
+    m_cameraSceneName: OculusCameraXR

@@ -31,12 +31,14 @@ public class Temp_AnimationToEventTriggeringMono : MonoBehaviour
         if (m_animator)
         {
             try {
-                float currentTime = m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-                float clipDuration = m_animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
-                float currentTimeInSeconds = (currentTime * clipDuration) * 1000f;
+               
+
+                float totalTime = m_animator.GetCurrentAnimatorStateInfo(0).length;
+                float nor = m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+                float timeInSeconds = totalTime * nor * 1000.0f;
                 m_msOfAnimationPrevious = m_msOfAnimation;
-                m_percentOfAnimation = currentTime;
-                m_msOfAnimation = currentTimeInSeconds;
+                m_percentOfAnimation = timeInSeconds/totalTime;
+                m_msOfAnimation = timeInSeconds;
 
                 var events = m_source.eventFound.Where(k => k.m_milliseconds > m_msOfAnimationPrevious && k.m_milliseconds <= m_msOfAnimation);
                 foreach (EventFound e in events)
@@ -44,9 +46,7 @@ public class Temp_AnimationToEventTriggeringMono : MonoBehaviour
                     m_positionEvent.Invoke(e.m_poseName);
                 }
             }
-            catch (Exception e) { //DIRTY CODE IGNORE.
-                                  //
-                                  }
+            catch (Exception e) { }
         }
        
     }
