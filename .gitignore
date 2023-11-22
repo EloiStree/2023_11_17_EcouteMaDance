@@ -64,7 +64,8 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
-
+*qxrcoreservice.aar
+*/qxrcoreservice.aar
 # Crashlytics generated file
 crashlytics-build.properties
 
